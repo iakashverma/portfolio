@@ -340,3 +340,45 @@ rainbowStyle.textContent = `
     }
 `;
 document.head.appendChild(rainbowStyle);
+
+// ==================== Profile Views Counter ==================== //
+function updateProfileViews() {
+    const profileViewsElement = document.getElementById('profileViews');
+    
+    if (profileViewsElement) {
+        // Get current views from localStorage
+        let views = localStorage.getItem('profileViews');
+        
+        // If no views stored, start with 45 as default
+        if (!views) {
+            views = 45;
+        } else {
+            views = parseInt(views);
+        }
+        
+        // Increment views
+        views++;
+        
+        // Store updated views
+        localStorage.setItem('profileViews', views);
+        
+        // Animate the number update
+        let currentCount = views - 1;
+        const targetCount = views;
+        const duration = 1000; // 1 second animation
+        const increment = 1;
+        const stepTime = duration / increment;
+        
+        const counter = setInterval(() => {
+            currentCount++;
+            profileViewsElement.textContent = currentCount;
+            
+            if (currentCount >= targetCount) {
+                clearInterval(counter);
+            }
+        }, stepTime);
+    }
+}
+
+// Call the function when page loads
+document.addEventListener('DOMContentLoaded', updateProfileViews);
