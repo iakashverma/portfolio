@@ -8,133 +8,424 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Name Card -->
-    <div class="name-card">
-        <span class="name-text">Akash's Portfolio</span>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a></li>
-                <li><a href="#about" class="nav-link">
-                    <i class="far fa-user"></i>
-                    <span>About</span>
-                </a></li>
-                 <li><a href="#education" class="nav-link">
-                    <i class="far fa-comment-dots"></i>
-                    <span>Education</span>
-                </a></li>
-                <li><a href="#projects" class="nav-link">
-                    <i class="far fa-folder-open"></i>
-                    <span>Projects</span>
-                </a></li>
-                <li><a href="#certificates" class="nav-link">
+    <!-- Enhanced Modern Header -->
+    <header class="modern-header" id="modernHeader">
+        <div class="header-container">
+            <!-- Logo/Brand Section -->
+            <div class="header-brand">
+                <div class="brand-icon">
                     <i class="fas fa-code"></i>
-                    <span>Certificates</span>
-                </a></li>
-                <li><a href="#contact" class="nav-link">
-                    <i class="far fa-envelope"></i>
-                    <span>Contact</span>
-                </a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Aakash</span>
+                    <span class="brand-subtitle">Portfolio</span>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="header-nav">
+                <ul class="nav-menu" id="nav-menu">
+
+                    <li><a href="#home" class="nav-link active">
+                        <i class="far fa-user"></i>
+                        <span>Home</span>
+                    </a></li>
+                    <li><a href="#education" class="nav-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </a></li>
+                    <li><a href="#certificates" class="nav-link">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificates</span>
+                    </a></li>
+                    <li><a href="#projects" class="nav-link">
+                        <i class="far fa-folder-open"></i>
+                        <span>Projects</span>
+                    </a></li>
+                    <li><a href="#ongoing-projects" class="nav-link">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Ongoing</span>
+                    </a></li>
+                    <li><a href="#contact" class="nav-link nav-link-cta">
+                        <i class="far fa-envelope"></i>
+                        <span>Contact</span>
+                    </a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-toggle" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Home Section -->
     <section id="home" class="home-section">
         <div class="container">
-            <div class="home-content">
-                <div class="welcome-badge">
-                    <p class="welcome-text">Welcome to my <strong>personal portfolio</strong> 👋</p>
-                </div>
-                
-                
-                <h1 class="main-title">Vibecoder & Growth Strategist</h1>
-                <p class="subtitle">I scale digital products people love, blending UX, Web3, and AI</p>
-                
-                <div class="feature-cards">
-                    <div class="feature-card">
-                        <div class="card-icon">🧮</div>
-                        <p>Expert in<br>scalable product<br>design &<br>marketing.</p>
+            <!-- <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know more about my background and expertise</p> -->
+            
+            <div class="about-wrapper">
+                <!-- Left Side - About Content -->
+                <div class="about-left">
+                    <div class="intro-text">
+                        <span class="greeting">👋 Hello there!</span>
+                        <h3>I'm a Creative Developer & Problem Solver</h3>
                     </div>
-                    <div class="feature-card">
-                        <div class="card-icon">🤿</div>
-                        <p>Passionate<br>about Web3, AI,<br>and<br>sustainability.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="card-icon">🌍</div>
-                        <p>Actively participating<br>in events and<br>leading event<br>management tasks.</p>
 
+                    <p class="about-description">
+                        I'm a passionate <strong>Full Stack Developer</strong> currently pursuing my Master's in Computer Applications 
+                        at Lovely Professional University. With a strong foundation in both frontend and backend technologies, 
+                        I specialize in creating modern, responsive, and user-friendly web applications.
+                    </p>
+
+                    <p class="about-description">
+                        My journey in tech has equipped me with expertise in <strong>Data Science, AI/ML, and IoT</strong>. 
+                        I love turning complex problems into simple, beautiful, and intuitive digital solutions that make a 
+                        real difference.
+                    </p>
+
+                    <!-- What I Do -->
+                    <div class="what-i-do">
+                        <h4><i class="fas fa-lightbulb"></i> What I Do</h4>
+                        <div class="services-grid">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h5>Web Development</h5>
+                                    <p>Building responsive and dynamic websites with modern technologies</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h5>Responsive Design</h5>
+                                    <p>Mobile-first approach ensuring seamless experience across devices</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h5>AI/ML Solutions</h5>
+                                    <p>Implementing intelligent solutions using data science and machine learning</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h5>Database Management</h5>
+                                    <p>Efficient data handling, storage, and optimization</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="card-icon">🚀</div>
-                        <p>Open for <br>freelance projects<br>let’s collaborate and <br>create impactful work.</p>
+
+                    <!-- CTA Buttons -->
+                    <div class="about-actions">
+                        <a href="#contact" class="btn-about hire-me">
+                            <i class="fas fa-handshake"></i>
+                            <span>Hire Me</span>
+                        </a>
+                        <a href="#" class="btn-about download-cv" download>
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="btn-about social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="btn-about social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side - Image & Stats -->
+                <div class="about-right">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="img/logo.jpeg" alt="Aakash Verma">
+                            <div class="status-indicator">
+                                <span class="status-dot"></span>
+                                Available for work
+                            </div>
+                        </div>
+                        
+                        <div class="profile-info">
+                            <h3>Aakash Verma</h3>
+                            <p class="profile-role">Full Stack Developer & Tech Enthusiast</p>
+                            
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">3+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">15+</div>
+                                    <div class="stat-label">Projects Done</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">10+</div>
+                                    <div class="stat-label">Technologies</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">Client Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-down">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
-        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
+    <!-- Technical Expertise Section -->
+    <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="about-img-wrapper">
-                        <img src="img/logo.jpeg" alt="Profile Picture">
+            <h2 class="section-title">Technical Expertise</h2>
+            <!-- <p class="section-subtitle">Technologies and tools I work with to bring ideas to life</p> -->
+            
+            <div class="skills-container">
+                <!-- Frontend Technologies -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="category-icon frontend">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Creating beautiful and responsive user interfaces</p>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag">
+                            <i class="fab fa-html5"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
+                            <i class="fab fa-css3-alt"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
+                            <i class="fab fa-js"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
+                            <i class="fab fa-react"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="about-text">
-                    <h3>I'm a Creative Developer</h3>
-                    <p>
-                        Hello! I'm a passionate web developer with expertise in creating modern clean UI/UX designs, 
-                        and responsive, user-friendly websites. I love turning complex problems 
-                        into simple, beautiful, and intuitive designs.
-                    </p>
-                    <p>
-                        With a strong foundation in both front-end and back-end technologies, 
-                        I strive to create seamless digital experiences that make a difference.
-                    </p>
-                    <div class="skills">
-                        <div class="skill-item">
+
+                <!-- Backend Technologies -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="category-icon backend">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Building robust and scalable server-side applications</p>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag">
+                            <i class="fab fa-node-js"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
                             <i class="fas fa-code"></i>
-                            <h4>Web Development</h4>
-                            <p>Building responsive and dynamic websites</p>
+                            <div class="skill-info">
+                                <span class="skill-name">Express.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <h4>Responsive Design</h4>
-                            <p>Mobile-first approach for all devices</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <h4>Database Management</h4>
-                            <p>Efficient data handling and storage</p>
+                        <div class="skill-tag">
+                            <i class="fab fa-php"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="tech-stack">
-                        <h4>Technologies I Work With:</h4>
-                        <div class="tech-icons">
-                            <span class="tech-badge">Frontend: HTML5, CSS3, JavaScript, React</span>
-                            <span class="tech-badge">Backend: Node.js, Express.js</span>
-                            <span class="tech-badge">Database: MongoDB, MySQL</span>
-                            <span class="tech-badge">Programming Language: C, Python</span>
-                            <span class="tech-badge">Version Control: Git, GitHub</span>
-                            <span class="tech-badge">Others: UI/UX Design</span>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="category-icon database">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database Management</h3>
+                        <p>Designing and managing efficient data storage solutions</p>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag">
+                            <i class="fas fa-leaf"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
+                            <i class="fas fa-database"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="category-icon languages">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                        <p>Core programming languages for problem-solving</p>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag">
+                            <i class="fab fa-python"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
+                            <i class="fas fa-copyright"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">C/C++</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="category-icon tools">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Design</h3>
+                        <p>Version control, collaboration, and design tools</p>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag">
+                            <i class="fab fa-git-alt"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
+                            <i class="fab fa-github"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
+                            <i class="fas fa-palette"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML & Data Science -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="category-icon aiml">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI/ML & Data Science</h3>
+                        <p>Machine learning and data analysis expertise</p>
+                    </div>
+                    <div class="skill-tags">
+                        <div class="skill-tag">
+                            <i class="fas fa-robot"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">Machine Learning</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">Data Science</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-tag">
+                            <i class="fas fa-project-diagram"></i>
+                            <div class="skill-info">
+                                <span class="skill-name">IoT</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,38 +436,119 @@
     <!-- Education Section -->
     <section id="education" class="education-section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-cards">
-                <div class="edu-card">
-                    <div class="edu-icon"><i class="fas fa-school"></i></div>
-                    <h3>10th Grade</h3>
-                    <h4>Radiant Central Children Academy</h4>
-                    <span class="edu-date">2019 - 2020</span>
-                    <p>Completed secondary education with a focus on Science/Mathematics.</p>
+            <h2 class="section-title">Educational Journey</h2>
+            <!-- <p class="section-subtitle">My academic path and learning milestones</p> -->
+            
+            <div class="education-timeline">
+                <!-- Education Item 1 -->
+                <div class="edu-timeline-item" data-aos="fade-up">
+                    <div class="edu-timeline-dot"></div>
+                    <div class="edu-timeline-content">
+                        <div class="edu-badge">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="edu-info">
+                            <span class="edu-year">2019 - 2020</span>
+                            <h3 class="edu-title">Secondary Education (10th Grade)</h3>
+                            <h4 class="edu-institution">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Radiant Central Children Academy
+                            </h4>
+                            <p class="edu-description">
+                                Completed secondary education with a strong focus on Science and Mathematics, 
+                                building a solid foundation for future technical studies.
+                            </p>
+                            <div class="edu-highlights">
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Science</span>
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Mathematics</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="edu-card">
-                    <div class="edu-icon"><i class="fas fa-book"></i></div>
-                    <h3>12th Grade</h3>
-                    <h4>Radiant Central Children Academy</h4>
-                    <span class="edu-date">2021 - 2022</span>
-                    <p>Higher secondary education; major subjects: Physics, Chemistry, Mathematics.</p>
+                <!-- Education Item 2 -->
+                <div class="edu-timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-timeline-dot"></div>
+                    <div class="edu-timeline-content">
+                        <div class="edu-badge">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="edu-info">
+                            <span class="edu-year">2021 - 2022</span>
+                            <h3 class="edu-title">Higher Secondary Education (12th Grade)</h3>
+                            <h4 class="edu-institution">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Radiant Central Children Academy
+                            </h4>
+                            <p class="edu-description">
+                                Advanced studies in Physics, Chemistry, and Mathematics, preparing for 
+                                higher education in computer science and technology.
+                            </p>
+                            <div class="edu-highlights">
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Physics</span>
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Chemistry</span>
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Mathematics</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="edu-card">
-                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Bachelor's Degree </h3>
-                    <h4>Lovely Professional University</h4>
-                    <span class="edu-date">2022 - 2025</span>
-                    <p>Bachelor of Computer Applications — focused on Data Science, AI/ML, and IoT.</p>
+                <!-- Education Item 3 -->
+                <div class="edu-timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="edu-timeline-dot"></div>
+                    <div class="edu-timeline-content">
+                        <div class="edu-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-info">
+                            <span class="edu-year">2022 - 2025</span>
+                            <h3 class="edu-title">Bachelor of Computer Applications (BCA)</h3>
+                            <h4 class="edu-institution">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Lovely Professional University
+                            </h4>
+                            <p class="edu-description">
+                                Comprehensive undergraduate program focused on modern technologies including 
+                                Data Science, Artificial Intelligence, Machine Learning, and Internet of Things.
+                            </p>
+                            <div class="edu-highlights">
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Data Science</span>
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> AI/ML</span>
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> IoT</span>
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Web Development</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="edu-card">
-                    <div class="edu-icon"><i class="fas fa-university"></i></div>
-                    <h3>Master's Degree</h3>
-                    <h4>Lovely Professional University</h4>
-                    <span class="edu-date">2025 - Ongoing</span>
-                    <p>Master of Computer Applications — currently learning Data Science, AI, and Machine Learning.</p>
+                <!-- Education Item 4 -->
+                <div class="edu-timeline-item current" data-aos="fade-up" data-aos-delay="300">
+                    <div class="edu-timeline-dot"></div>
+                    <div class="edu-timeline-content">
+                        <div class="edu-badge">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="edu-info">
+                            <span class="edu-year current-badge">
+                                <i class="fas fa-circle pulse"></i> 2025 - Ongoing
+                            </span>
+                            <h3 class="edu-title">Master of Computer Applications (MCA)</h3>
+                            <h4 class="edu-institution">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Lovely Professional University
+                            </h4>
+                            <p class="edu-description">
+                                Advanced postgraduate studies specializing in Data Science, Artificial Intelligence, 
+                                and Machine Learning with focus on real-world applications and research.
+                            </p>
+                            <div class="edu-highlights">
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Advanced AI</span>
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Machine Learning</span>
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Data Analytics</span>
+                                <span class="highlight-tag"><i class="fas fa-check-circle"></i> Research</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -212,7 +584,7 @@
                     <div class="project-image">
                         <img src="img/p2.png" alt="Task Management App">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://krishi.ct.ws" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             <a href="#" class="project-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
@@ -316,7 +688,104 @@
                 </div>-->
             </div>
         </div>
-    </section> 
+    </section>
+
+    <!-- Ongoing Projects Section -->
+    <section id="ongoing-projects" class="ongoing-projects-section">
+        <div class="container">
+            <h2 class="section-title">Ongoing Projects</h2>
+            <!-- <p class="section-subtitle">Currently working on these exciting projects</p> -->
+            
+            <div class="ongoing-grid">
+                <!-- KrishiHub Project -->
+                <div class="ongoing-card featured">
+                    <div class="ongoing-header">
+                        <div class="ongoing-badge">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <span class="status-pill active">
+                            <span class="pulse-dot"></span>
+                            In Active Development
+                        </span>
+                    </div>
+                    
+                    <div class="ongoing-content">
+                        <h3 class="ongoing-title">KrishiHub</h3>
+                        <p class="ongoing-subtitle">All-in-One Agricultural Platform for Farmers</p>
+                        
+                        <p class="ongoing-description">
+                            KrishiHub is a comprehensive digital platform designed to revolutionize farming by providing 
+                            farmers with seamless access to agricultural machinery, crop trading markets, equipment rentals, 
+                            quality fertilizers, and complete farming support solutions - all in one place.
+                        </p>
+
+                        <div class="ongoing-features">
+                            <h4><i class="fas fa-check-circle"></i> Key Features</h4>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-tractor"></i> Machinery Marketplace & Rental Services</li>
+                                <li><i class="fas fa-store"></i> Crop Trading Platform</li>
+                                <li><i class="fas fa-flask"></i> Fertilizers & Agricultural Products</li>
+                                <li><i class="fas fa-phone-alt"></i> Expert Agricultural Consultation</li>
+                                <li><i class="fas fa-chart-line"></i> Market Price Analytics</li>
+                                <li><i class="fas fa-users"></i> Farmer Community Network</li>
+                            </ul>
+                        </div>
+
+                        <div class="tech-stack">
+                            <h4><i class="fas fa-code"></i> Technology Stack</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                                <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                                <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                                <span class="tech-tag"><i class="fas fa-server"></i> REST API</span>
+                            </div>
+                        </div>
+
+                        <div class="progress-section">
+                            <div class="progress-header">
+                                <h4><i class="fas fa-tasks"></i> Development Progress</h4>
+                                <span class="progress-percentage">75%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 75%">
+                                    <span class="progress-glow"></span>
+                                </div>
+                            </div>
+                            <div class="progress-milestones">
+                                <div class="milestone completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>UI/UX Design</span>
+                                </div>
+                                <div class="milestone completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Frontend Development</span>
+                                </div>
+                                <div class="milestone in-progress">
+                                    <i class="fas fa-spinner"></i>
+                                    <span>Backend Integration</span>
+                                </div>
+                                <div class="milestone pending">
+                                    <i class="far fa-circle"></i>
+                                    <span>Testing & Launch</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ongoing-actions">
+                            <a href="https://krishi.ct.ws/?i=1" class="btn-ongoing primary">
+                                <i class="fas fa-eye"></i> View Demo
+                            </a>
+                            <a href="https://github.com/iakashverma?tab=repositories" class="btn-ongoing secondary">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Certificates Section -->
     <section id="certificates" class="certificates-section">
@@ -376,7 +845,7 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Connect With Me</h2>
-            <p class="section-subtitle">Let's work together on your next project</p>
+            <!-- <p class="section-subtitle">Let's work together on your next project</p> -->
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Get In Touch</h3>

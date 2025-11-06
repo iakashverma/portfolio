@@ -1,29 +1,38 @@
-// ==================== Navigation ==================== //
+// ==================== Modern Header Navigation ==================== //
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
-const navbar = document.getElementById('navbar');
+const modernHeader = document.getElementById('modernHeader');
+const headerNav = document.querySelector('.header-nav');
 
 // Toggle mobile menu
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    headerNav.classList.toggle('active');
 });
 
 // Close mobile menu when clicking on a link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+        headerNav.classList.remove('active');
     });
 });
 
-// Navbar scroll effect
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !headerNav.contains(e.target)) {
+        hamburger.classList.remove('active');
+        headerNav.classList.remove('active');
+    }
+});
+
+// Header scroll effect
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
+        modernHeader.classList.add('scrolled');
     } else {
-        navbar.classList.remove('scrolled');
+        modernHeader.classList.remove('scrolled');
     }
 });
 
@@ -166,7 +175,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         
         if (target) {
-            const offsetTop = target.offsetTop - 70;
+            const offsetTop = target.offsetTop - 80; // Account for fixed header height
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
